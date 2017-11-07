@@ -22,11 +22,26 @@
     }
   },
   "dependencies": {
+    "immutable": "^3.8.2",
+    "rambda": "^1.0.3",
     "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "react-dom": "^16.0.0",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "redux-actions": "^2.2.1",
+    "redux-immutable": "^4.0.0"
   },
   "devDependencies": {
-    "nwb": "0.19.x"
+    "babel-eslint": "^8.0.1",
+    "eslint": "^4.10.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^4.3.0",
+    "nwb": "0.19.x",
+    "nwb-sass": "^0.8.2"
   },
   "author": "",
   "license": "MIT",
