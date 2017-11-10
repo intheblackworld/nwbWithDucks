@@ -1,19 +1,22 @@
-import './App.css'
+import { Link, Route, Switch } from 'react-router-dom'
+import routes from './routes'
 
-import React, {Component} from 'react'
+const App = () => (
+  <div>
+    <header>
+      <Link to="/">Home</Link>
+      <Link to="/products">Products</Link>
 
-class App extends Component {
-  render() {
-    return <div className="App">
-      <div className="App-heading App-flex">
-        <h2>Welcome to <span className="App-react">React</span></h2>
-      </div>
-      <div className="App-instructions App-flex">
-        <img className="App-logo" src={require('./react.svg')}/>
-        <p>Edit <code>src/App.js</code> and save to hot reload your changes.</p>
-      </div>
-    </div>
-  }
-}
+    </header>
+    <Switch>
+      {routes.map(route => (
+        <Route key={route.path} { ...route } />
+      ))}
+    </Switch>
+    <footer>
+      I`m the footer, I am on every page.
+        </footer>
+  </div>
+)
 
 export default App
