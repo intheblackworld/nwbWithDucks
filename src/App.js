@@ -1,11 +1,16 @@
+import React from 'react'
 import { Link, Route, Switch } from 'react-router-dom'
+
+import 'bulma/css/bulma.css'
+
 import routes from './routes'
+
 
 const App = () => (
   <div>
     <header>
-      <Link to="/">Home</Link>
-      <Link to="/products">Products</Link>
+      <Link className="button is-primary" to="/">Home</Link>
+      <Link className="button is-primary" to="/products">Products</Link>
 
     </header>
     <Switch>
