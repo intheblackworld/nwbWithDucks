@@ -11,7 +11,8 @@
     "test:coverage": "nwb test-react --coverage",
     "test:watch": "nwb test-react --server",
     "lint": "./node_modules/eslint/bin/eslint.js src/ --fix",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "json-server": "json-server db.json --routes json-server/routes.json | nwb serve-react-app"
   },
   "lint-staged": {
     "linters": {
@@ -22,6 +23,7 @@
     }
   },
   "dependencies": {
+    "bulma": "^0.6.1",
     "classnames": "^2.2.5",
     "immutable": "^3.8.2",
     "rambda": "^1.0.3",
@@ -42,6 +44,7 @@
     "eslint-plugin-jsx-a11y": "^6.0.2",
     "eslint-plugin-react": "^7.4.0",
     "husky": "^0.14.3",
+    "json-server": "^0.12.1",
     "lint-staged": "^4.3.0",
     "nwb": "0.19.x",
     "nwb-sass": "^0.8.2"
